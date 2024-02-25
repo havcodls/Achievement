@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    background: #f2f2f2;
+}
+
+header{
+    background-image: url("https://www.lowa.co.uk/cdn/shop/articles/Cloudy_mountain_single_hiker_feature.jpg?v=1658760581");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hamburger{
+    display: none;
+}
+
+/*Black Filter*/
+header::before{
+    content: "";
+    background: black;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+nav{
+    position: fixed;
+    height: 50px;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    z-index: 2;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+    font-size: 28px;
+    color: #fff;
+}
+
+nav .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .hyperlinks a{
+    margin: 0 10px 0 0;
+    color: #fff;
+    position: relative;
+}
+
+.nav-right .hyperlinks{
+    margin-right: 30px;
+}
+
+.btn-started button{
+    border-radius: 14px;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    font-weight: 400;
+    cursor: pointer;
+    background: #0041ae;
+    color: #fff;
+    transition: 0.3s ease-out;
+}
+
+.nav-right .hyperlinks a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    bottom: -1px;
+    transition: 0.5s ease-out;
+}
+
+.nav-right .hyperlinks a:hover::before{
+    width: 100%;
+}
+
+.btn-started button:hover{
+    background: #2c90e7;
+}
+
+header .container-header{
+    background: transparent;
+    position: relative;
+    top: 270px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.container-header h2{
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.container-header button{
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    font-weight: 400;
+    cursor: pointer;
+    background: #6affa5;
+    color: #333;
+    transition: 0.3s ease-out;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.container-header h2 span{
+    color: #6affa5;
+}
+
+.container-header button::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s ease-out;
+}
+
+.container-header button:hover::before{
+    width: 100%;
+}
+
+.container-header button:hover{
+    color: #333;
+}
+
+.sec1{
+    height: auto;
+    width: 100%;
+    background: #f2f2f2;
+    margin: 100px 0 100px 0;
+}
+
+.title-all-sections{
+    text-align: center;
+    margin: 100px 0;
+    font-size: 30px;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    color: black;
+
+}
+
+.goal-setting{
+    background: transparent;
+    margin: 0 60px;
+}
+
+.goal-setting h2{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.goal-setting p span{
+    color: #0041ae;
+    font-weight: 500;
+}
+
+nav{
+    background: transparent;
+    transition: background-color 1s ease;
+}
+
+.black-navbar{
+    background: black;
+}
+
+.sec2{
+    height: auto;
+    width: 100%;
+    background: #f2f2f2;
+    margin: 100px 0 100px 0;
+}
+
+.success-strategies{
+    background: transparent;
+    margin: 0 60px;
+}
+
+.success-strategies h2{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.success-strategies p span{
+    font-weight: 500;
+    color: #0041ae;
+}
+
+.sec3{
+    height: auto;
+    width: 100%;
+    background: #f2f2f2;
+    margin: 100px 0 100px 0;
+}
+
+.discipline-motivation{
+    background: transparent;
+    margin: 0 60px;
+}
+
+.discipline-motivation h2{
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.discipline-motivation p span{
+    color: #0041ae;
+    font-weight: 500;
+}
+
+footer{
+    height: 60vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-top{
+    background: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-top .hyperlinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top .hyperlinks a{
+    color: #fff;
+    transition: 0.3s ease-out;
+}
+
+.footer-bottom{
+    background: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ion-icon{
+    color: #fff;
+    height: 20px;
+    width: 20px;
+}
+
+.socials-medias a{
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.3s ease-out;
+}
+
+.socials-medias{
+    display: flex;
+    align-items: center;
+}
+
+.copyright{
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-top button{
+    border-radius: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 14px 20px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    cursor: pointer;
+    background: #0041ae;
+    color: #fff;
+    transition: 0.3s ease-out;
+}
+
+.footer-top h2{
+    font-size: 28px;
+}
+
+
+.footer-top button:hover{
+    background: #2c90e7;
+    box-shadow: 0 0 10px 5px #ffffffab;
+}
+
+.footer-bottom .socials-medias a:hover{
+    background: #0041ae;
+    border: 1px solid #0041ae;
+}
+
+.footer-top .hyperlinks a:hover{
+    color: #0041ae;
+}
+
+@media (max-width:660px) {
+    .nav-right .hyperlinks a{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+        cursor: pointer;
+    }
+
+    .hamburger span{
+        height: 2px;
+        width: 26px;
+        background: #fff;
+        margin: 3px 0;
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        
+    }
+
+    .logo{
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .nav-right{
+        display: flex;
+        justify-content: end;
+
+    }
+}
